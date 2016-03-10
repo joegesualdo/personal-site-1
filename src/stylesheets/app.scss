@@ -1,0 +1,179 @@
+/* RESETS ======
+ *   Taken from: http://jaydenseric.com/blog/forget-normalize-or-resets-lay-your-own-css-foundation
+*/
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font: 16px/1 sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+blockquote,
+figure,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+main,
+li {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: inherit;
+}
+
+strong {
+  font-weight: bold;
+}
+
+a,
+button {
+  color: inherit;
+  transition: .3s;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  overflow: visible;
+  border: 0;
+  font: inherit;
+  -webkit-font-smoothing: inherit;
+  letter-spacing: inherit;
+  background: none;
+  cursor: pointer;
+}
+
+::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+:focus {
+  outline: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+/* END RESETS ====== */
+
+/* COLOR PALETTE =========*/
+  $brotherhood-font-stack: 400 16px/27px 'Open Sans',"Helvetica Neue",sans-serif;
+  $ueno-font-stack: 300 19px/1.5 HelveticaNeue,Arial,sans-serif;
+  $ueno-font-stack-bold: 400 3.263em/1.048 "AvantGarde Bold",sans-serif;
+  $ueno-font-stack-b: 22px/1 "Source Sans Pro",sans-serif;
+  $minimill-font-family: Calibre,Helvetica,Arial,sans-serif;
+  $dark-background-color: #1B1E26;
+  $gray: #9093A0;
+  $purple: #6542B5;
+  $teel: #27B596;
+  $white: #fff;
+/* END COLOR PALETTE =========*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}
+
+body {
+  font: $brotherhood-font-stack;
+  // font-family: $minimill-font-family;
+  color: $white;
+}
+
+a {
+  color: $teel;
+}
+
+.intro-section {
+  background: $dark-background-color;
+  height: 300px;
+  padding: 20px 0;
+}
+.intro-section_content {
+  width: 960px;
+  margin: 0 auto;
+  height: 100%;
+}
+.intro-section_picture-holder {
+  float: left;
+  height: 100%;
+}
+
+.intro-section_picture-holder_image {
+  // Change based on picture size.
+  position: relative;
+  height: 300px;
+  width: 200px;
+  border-left: 2px solid $teel;
+  // Vertically align
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 40px;
+  // End vertical alignment
+}
+.intro-section_content-holder {
+  float: right;
+  width: 760px;
+  height: 100%;
+  padding: 30px;
+}
+.intro-section_content-holder_content {
+  position: relative;
+  // Vertically align
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 40px;
+  // End vertical alignment
+  font-size: 30px;
+  color: $gray;
+}
+
+.intro-section_content-holder_content_name {
+  color: $white;
+  font-weight: 600;
+}
+
