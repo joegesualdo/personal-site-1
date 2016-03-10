@@ -1,16 +1,20 @@
+@import '../mixins';
+
 .intro-section {
   background: $dark-background-color;
   height: 300px;
   padding: 20px 0;
 }
+
 .intro-section_content {
-  width: 960px;
+  height: 100%;
   margin: 0 auto;
-  height: 100%;
+  width: 960px;
 }
+
 .intro-section_picture-holder {
-  float: left;
   height: 100%;
+  float: left;
 }
 
 .intro-section_picture-holder_image {
@@ -19,25 +23,19 @@
   height: 300px;
   width: 200px;
   border-left: 2px solid $teel;
-  // Vertically align
-  top: 50%;
-  transform: translateY(-50%);
-  line-height: 40px;
-  // End vertical alignment
+  @include center-vertically();
 }
+
 .intro-section_content-holder {
   float: right;
   width: 760px;
   height: 100%;
   padding: 30px;
 }
+
 .intro-section_content-holder_content {
   position: relative;
-  // Vertically align
-  top: 50%;
-  transform: translateY(-50%);
-  line-height: 40px;
-  // End vertical alignment
+  @include center-vertically();
   font-size: 30px;
   color: $gray;
 }

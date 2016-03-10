@@ -1,0 +1,10 @@
+/* Centers element vertically.
+ * @source http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+ * Example:
+ *  @include cetner-vertically(); 
+*/
+@mixin center-vertically() {
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 40px;
+}
