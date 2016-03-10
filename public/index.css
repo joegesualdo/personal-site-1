@@ -140,3 +140,23 @@ a {
 .intro-section_content-holder_content_name {
   color: #fff;
   font-weight: 600; }
+
+.social-icon-bar {
+  position: absolute;
+  top: 40px;
+  right: 40px; }
+
+.social-icon-bar_container_twitter-logo {
+  height: 20px;
+  width: 20px;
+  margin: 5px; }
+
+.social-icon-bar_container_github-logo {
+  height: 20px;
+  width: 20px;
+  margin: 5px; }
+
+.social-icon-bar_container_linkedin-logo {
+  height: 20px;
+  width: 20px;
+  margin: 5px; }

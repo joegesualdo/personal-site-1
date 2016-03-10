@@ -22,6 +22,10 @@ function getContentType(path) {
   if (ext == "jpg" || ext === "jpeg") {
     return "image/jpeg"
   }
+  if (ext == "svg") {
+    return "image/svg+xml"
+  }
+
   return "text/html";
 }
 
