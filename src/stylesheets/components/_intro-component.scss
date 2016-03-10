@@ -1,0 +1,49 @@
+.intro-section {
+  background: $dark-background-color;
+  height: 300px;
+  padding: 20px 0;
+}
+.intro-section_content {
+  width: 960px;
+  margin: 0 auto;
+  height: 100%;
+}
+.intro-section_picture-holder {
+  float: left;
+  height: 100%;
+}
+
+.intro-section_picture-holder_image {
+  // Change based on picture size.
+  position: relative;
+  height: 300px;
+  width: 200px;
+  border-left: 2px solid $teel;
+  // Vertically align
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 40px;
+  // End vertical alignment
+}
+.intro-section_content-holder {
+  float: right;
+  width: 760px;
+  height: 100%;
+  padding: 30px;
+}
+.intro-section_content-holder_content {
+  position: relative;
+  // Vertically align
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 40px;
+  // End vertical alignment
+  font-size: 30px;
+  color: $gray;
+}
+
+.intro-section_content-holder_content_name {
+  color: $white;
+  font-weight: 600;
+}
+
