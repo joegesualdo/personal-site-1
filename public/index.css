@@ -1,5 +1,4 @@
-/* RESETS ======
- *   Taken from: http://jaydenseric.com/blog/forget-normalize-or-resets-lay-your-own-css-foundation
+/* Taken from: http://jaydenseric.com/blog/forget-normalize-or-resets-lay-your-own-css-foundation
 */
 html {
   -ms-text-size-adjust: 100%;
@@ -65,7 +64,6 @@ img {
   height: auto;
   border: 0; }
 
-/* END RESETS ====== */
 /* COLOR PALETTE =========*/
 /* END COLOR PALETTE =========*/
 * {
