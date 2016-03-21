@@ -100,46 +100,72 @@ a {
  * Example:
  *  @include cetner-vertically(); 
 */
-.intro-section {
-  background: #1B1E26;
-  height: 300px;
-  padding: 20px 0; }
+@media screen and (min-width: 1012px) {
+  .intro-section {
+    background: #1B1E26;
+    height: 300px;
+    padding: 20px 0; }
+  .intro-section_content {
+    height: 100%;
+    margin: 0 auto;
+    width: 960px; }
+  .intro-section_picture-holder {
+    height: 100%;
+    float: left;
+    display: block; }
+  .intro-section_picture-holder_image {
+    position: relative;
+    height: 300px;
+    width: 200px;
+    border-left: 2px solid #27B596;
+    top: 50%;
+    transform: translateY(-50%); }
+  .intro-section_content-holder {
+    float: right;
+    width: 760px;
+    height: 100%;
+    padding: 30px; }
+  .intro-section_content-holder_content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #9093A0;
+    line-height: 38px; }
+  .intro-section_content-holder_content_name {
+    color: #fff;
+    font-weight: 600;
+    padding: 0 0 10px 0; } }
 
-.intro-section_content {
-  height: 100%;
-  margin: 0 auto;
-  width: 960px; }
-
-.intro-section_picture-holder {
-  height: 100%;
-  float: left; }
-
-.intro-section_picture-holder_image {
-  position: relative;
-  height: 300px;
-  width: 200px;
-  border-left: 2px solid #27B596;
-  top: 50%;
-  transform: translateY(-50%);
-  line-height: 40px; }
-
-.intro-section_content-holder {
-  float: right;
-  width: 760px;
-  height: 100%;
-  padding: 30px; }
-
-.intro-section_content-holder_content {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  line-height: 40px;
-  font-size: 30px;
-  color: #9093A0; }
-
-.intro-section_content-holder_content_name {
-  color: #fff;
-  font-weight: 600; }
+@media screen and (max-width: 1012px) {
+  .intro-section {
+    background: #1B1E26;
+    height: 300px;
+    padding: 20px 0; }
+  .intro-section_content {
+    height: 100%;
+    margin: 0 auto;
+    width: 100%; }
+  .intro-section_picture-holder {
+    display: none; }
+  .intro-section_picture-holder_image {
+    position: relative;
+    width: 200px;
+    border-left: 2px solid #27B596; }
+  .intro-section_content-holder {
+    height: 100%;
+    padding: 30px; }
+  .intro-section_content-holder_content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #9093A0;
+    line-height: 33px; }
+  .intro-section_content-holder_content_name {
+    color: #fff;
+    font-weight: 600;
+    padding: 0 0 10px 0; } }
 
 .social-icon-bar {
   position: absolute;
@@ -147,16 +173,31 @@ a {
   right: 40px; }
 
 .social-icon-bar_container_twitter-logo {
-  height: 20px;
-  width: 20px;
+  display: inline-block;
   margin: 5px; }
+  .social-icon-bar_container_twitter-logo svg {
+    width: 20px;
+    height: 20px;
+    fill: white; }
+  .social-icon-bar_container_twitter-logo svg:hover {
+    fill: #27B596; }
 
 .social-icon-bar_container_github-logo {
-  height: 20px;
-  width: 20px;
+  display: inline-block;
   margin: 5px; }
+  .social-icon-bar_container_github-logo svg {
+    width: 20px;
+    height: 20px;
+    fill: white; }
+  .social-icon-bar_container_github-logo svg:hover {
+    fill: #27B596; }
 
 .social-icon-bar_container_linkedin-logo {
-  height: 20px;
-  width: 20px;
+  display: inline-block;
   margin: 5px; }
+  .social-icon-bar_container_linkedin-logo svg {
+    width: 20px;
+    height: 20px;
+    fill: white; }
+  .social-icon-bar_container_linkedin-logo svg:hover {
+    fill: #27B596; }

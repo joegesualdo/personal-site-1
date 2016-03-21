@@ -1,47 +1,98 @@
 @import '../mixins';
 
-.intro-section {
-  background: $dark-background-color;
-  height: 300px;
-  padding: 20px 0;
+// Styles for larger screens
+@media screen and (min-width: 1012px) {
+  .intro-section {
+    background: $dark-background-color;
+    height: 300px;
+    padding: 20px 0;
+  }
+
+  .intro-section_content {
+    height: 100%;
+    margin: 0 auto;
+    width: 960px;
+  }
+
+
+  .intro-section_picture-holder {
+    height: 100%;
+    float: left;
+    display: block;
+  }
+
+  .intro-section_picture-holder_image {
+    // Change based on picture size.
+    position: relative;
+    height: 300px;
+    width: 200px;
+    border-left: 2px solid $teel;
+    @include center-vertically();
+  }
+
+  .intro-section_content-holder {
+    float: right;
+    width: 760px;
+    height: 100%;
+    padding: 30px;
+  }
+
+  .intro-section_content-holder_content {
+    position: relative;
+    @include center-vertically();
+    font-size: 30px;
+    color: $gray;
+    line-height: 38px;
+  }
+
+  .intro-section_content-holder_content_name {
+    color: $white;
+    font-weight: 600;
+    padding: 0 0 10px 0;
+  }
 }
 
-.intro-section_content {
-  height: 100%;
-  margin: 0 auto;
-  width: 960px;
-}
+// Styles for medium and small screens
+@media screen and (max-width: 1012px) {
+  .intro-section {
+    background: $dark-background-color;
+    height: 300px;
+    padding: 20px 0;
+  }
 
-.intro-section_picture-holder {
-  height: 100%;
-  float: left;
-}
+  .intro-section_content {
+    height: 100%;
+    margin: 0 auto;
+    width: 100%;
+  }
 
-.intro-section_picture-holder_image {
-  // Change based on picture size.
-  position: relative;
-  height: 300px;
-  width: 200px;
-  border-left: 2px solid $teel;
-  @include center-vertically();
-}
+  .intro-section_picture-holder {
+     display: none;
+  }
 
-.intro-section_content-holder {
-  float: right;
-  width: 760px;
-  height: 100%;
-  padding: 30px;
-}
+  .intro-section_picture-holder_image {
+    // Change based on picture size.
+    position: relative;
+    width: 200px;
+    border-left: 2px solid $teel;
+  }
 
-.intro-section_content-holder_content {
-  position: relative;
-  @include center-vertically();
-  font-size: 30px;
-  color: $gray;
-}
+  .intro-section_content-holder {
+    height: 100%;
+    padding: 30px;
+  }
 
-.intro-section_content-holder_content_name {
-  color: $white;
-  font-weight: 600;
-}
+  .intro-section_content-holder_content {
+    position: relative;
+    @include center-vertically();
+    font-size: 30px;
+    color: $gray;
+    line-height: 33px;
+  }
 
+  .intro-section_content-holder_content_name {
+    color: $white;
+    font-weight: 600;
+    padding: 0 0 10px 0;
+  }
+}

@@ -1,3 +1,4 @@
+
 .social-icon-bar {
   position: absolute;
   top: 40px;
@@ -7,19 +8,40 @@
 }
 
 .social-icon-bar_container_twitter-logo {
-  height: 20px;
-  width: 20px;
-  margin:5px;
+  display: inline-block;
+  margin: 5px;
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+  }
+  svg:hover {
+    fill: $teel;
+  }
 }
 
 .social-icon-bar_container_github-logo {
-  height: 20px;
-  width: 20px;
-  margin:5px;
+  display: inline-block;
+  margin: 5px;
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+  }
+  svg:hover {
+    fill: $teel;
+  }
 }
 
 .social-icon-bar_container_linkedin-logo {
-  height: 20px;
-  width: 20px;
-  margin:5px;
+  display: inline-block;
+  margin: 5px;
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+  }
+  svg:hover {
+    fill: $teel;
+  }
 }
